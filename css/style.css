@@ -1,4 +1,9 @@
+/* font-call-start */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+/* font-call-end */
+
 
 /* site default css start */
 
@@ -9,31 +14,6 @@
     list-style: none;
     text-decoration: none;
 }
-
-
-/* site default css end */
-
-
-/* container css start */
-
-.container {
-    width: 1110px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.container::before,
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* container css end */
-
-
-/* site default css start */
 
 .col-25 {
     width: 25%;
@@ -73,6 +53,27 @@
 
 
 /* site default css end */
+
+
+/* container css start */
+
+.container {
+    width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* container css end */
+
+
+/* site-style-css-start */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -147,11 +148,14 @@ p {
 }
 
 
-/* site-css-start */
+/* header-section-start */
 
 #header-section .container {
     padding: 0;
 }
+
+
+/* top-nav-start */
 
 .topnav {
     height: 50px;
@@ -179,6 +183,11 @@ p {
 
 .phone-mail .phone a {
     color: #fff;
+    transition: .3s;
+}
+
+.phone-mail .phone a:hover {
+    color: #ff3115;
 }
 
 .phone-mail .mail {
@@ -187,6 +196,11 @@ p {
 
 .phone-mail .mail a {
     color: #fff;
+    transition: .3s;
+}
+
+.phone-mail .mail a:hover {
+    color: #ff3115;
 }
 
 .log-social {
@@ -217,6 +231,15 @@ p {
     transition: .3s;
 }
 
+.log-social .social ul li a:hover {
+    color: #ff3115;
+}
+
+/* top-nav-end */
+
+
+/* down-nav-start */
+
 .downnav {
     height: 100px;
     background: #fff;
@@ -230,6 +253,9 @@ p {
     padding: 0;
 }
 
+
+/* logo-css-start */
+
 .downnav .logo {
     margin-top: 33px;
     height: 34px;
@@ -238,6 +264,11 @@ p {
 .downnav .logo img {
     height: 100%;
 }
+
+/* logo-css-end */
+
+
+/* site-menu-css-start */
 
 .menu {
     line-height: 100px;
@@ -257,7 +288,17 @@ p {
     font-weight: 500;
     color: #505050;
     display: inline-block;
+    transition: .3s;
 }
+
+.menu ul li a:hover {
+    color: #ff3115;
+}
+
+/* site-menu-css-end */
+
+
+/* apply-now-btn-css-start */
 
 .anbtn {
     margin-LEFT: 30PX;
@@ -268,7 +309,21 @@ p {
     padding: 10px 20px;
     background: #ff3115;
     border-radius: 20px;
+    transition: .3s;
 }
+
+.anbtn a:hover {
+    background: #212121;
+}
+
+/* apply-now-btn-css-end */
+
+/* down-nav-end */
+
+/* header-section-end */
+
+
+/* hero-section-start */
 
 #hero-section {
     background: url(../image/hero-slider/slider1.jpg);
@@ -281,6 +336,8 @@ p {
     padding: 0;
 }
 
+/* hero-text-css-start */
+
 .hero-text {
     margin: 240px 0 100px 0;
 }
@@ -288,6 +345,11 @@ p {
 .hero-text h1 {
     padding: 20px 0 30px 0;
 }
+
+/* hero-text-css-end */
+
+
+/* hero-button-css-start */
 
 .btn {
     margin-top: 50px;
@@ -297,11 +359,44 @@ p {
 .btn a {
     font-size: 17PX;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background: #ff3115;
     border-radius: 30px;
     display: inline-block;
+    transition: .3s;
 }
+
+.btn a:hover {
+    background: #212121;
+}
+
+.btnw {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.btnw a {
+    font-size: 17PX;
+    color: #212121;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 30px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.btnw a:hover {
+    color: #fff;
+    background: #ff3115;
+}
+
+/* hero-button-css-end */
+
+/* hero-section-end */
+
+
+/* learning-section-css-start */
 
 .learning-objective .container {
     padding: 0;
@@ -314,8 +409,12 @@ p {
 .learning-box {
     background: #f8f8f8;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     border: 1px solid #ddd;
+}
+
+.learning-box:hover {
+    border: 1px solid #ff3115;
 }
 
 .learning-icon {
@@ -329,6 +428,11 @@ p {
     width: 100%;
     width: 100%;
 }
+
+/* learning-section-css-end */
+
+
+/* testimonial-section-css-start */
 
 #testimonial-section {
     background: url(../image/bg-image/bg3.jpg);
@@ -355,5 +459,7 @@ p {
     color: #fff;
 }
 
+/* testimonial-section-css-end */
 
-/* site-css-end */
+
+/* site-style-css-end */
