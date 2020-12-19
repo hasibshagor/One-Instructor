@@ -415,6 +415,9 @@ p {
 
 .learning-box:hover {
     border: 1px solid #ff3115;
+    box-shadow: -2px 33px 45px -15px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: -2px 33px 45px -15px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -2px 33px 45px -15px rgba(0, 0, 0, 0.29);
 }
 
 .learning-icon {
